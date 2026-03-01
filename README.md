@@ -1,11 +1,11 @@
-# LLM-Based Adaptive Learning Assistant (Local AI Agent)
+# LLM-Based Adaptive Learning Assistant
 
 A local AI-powered educational assistant built using Python and Ollama (Llama3).  
 This project demonstrates LLM integration, prompt engineering, structured output validation, and interactive CLI-based assessment design.
 
----
 
-## Overview
+
+ Overview
 
 The LLM-Based Adaptive Learning Assistant is a local AI system that:
 
@@ -18,9 +18,9 @@ The LLM-Based Adaptive Learning Assistant is a local AI system that:
 
 The system runs entirely locally using Ollama — no external API billing required.
 
----
 
-## Key Features
+
+ Key Features
 
 - Topic-based note storage (SQLite-backed memory)
 - AI-generated quizzes with interactive scoring
@@ -30,9 +30,9 @@ The system runs entirely locally using Ollama — no external API billing requir
 - Progress tracking system (todo / doing / done)
 - Local deployment using Ollama (Llama3)
 
----
 
-## Tech Stack
+
+Tech Stack
 
 - Python
 - Ollama (Llama3 model)
@@ -42,9 +42,9 @@ The system runs entirely locally using Ollama — no external API billing requir
 - Prompt Engineering
 - Structured Output Validation (JSON Schema)
 
----
 
-## Project Structure
+
+ Project Structure
 
 edu_agent/
 │
@@ -57,9 +57,9 @@ edu_agent/
 ├── README.md
 └── .gitignore
 
----
 
-## Installation & Setup
+
+ Installation & Setup
 
 1) Install Ollama  
 Download and install from:
@@ -95,9 +95,9 @@ You should see:
     ...
     You:
 
----
 
-## Available Commands
+
+ Available Commands
 
 note: <topic> | <content>      -> Save a note  
 search: <keyword>              -> Search saved notes  
@@ -108,17 +108,17 @@ ask: <question>                -> AI tutor explanation mode
 help                           -> Show commands  
 quit                           -> Exit program  
 
----
 
-## Example Usage
+
+ Example Usage
 
     note: Gradient Descent | Update rule: w = w - alpha * gradient
     quiz: Gradient Descent
     ask: Explain gradient descent with a small numeric example
 
----
 
-## AI Design Considerations
+
+AI Design Considerations
 
 - Structured JSON prompt design ensures predictable quiz formatting.
 - Schema validation reduces hallucination-driven formatting errors.
@@ -126,22 +126,21 @@ quit                           -> Exit program
 - Prompt constraints improve logical consistency between answers and explanations.
 - Designed to demonstrate practical LLM orchestration and reliability engineering.
 
----
 
-## Future Improvements
+
+ Future Improvements
 
 - Add REST API layer (FastAPI)
 - Add web interface (Streamlit or React)
 - Add quiz performance analytics dashboard
 - Add auto-validation and regeneration pipeline for incorrect questions
 
----
 
-## Notes
+
+ Notes
 
 - As this system uses a generative LLM, factual accuracy may vary.
 - Designed as a demonstration of LLM integration and prompt engineering.
 - Fully local deployment — no external API keys required.
 
----
 
